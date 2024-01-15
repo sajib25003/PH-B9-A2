@@ -194,6 +194,104 @@ main {
     line-height: 150%;
 }
 
+/* Choose Destination Section Style */
+.destination-section{
+    margin-top: 8%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+.destination-text{
+    margin: 3% 20%;
+}
+.grid-text {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.grid-text-7 {
+    left: 40%;
+}
+
+.grid-item {
+    height: 300px;
+    border-radius: 16px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-1 {
+    background-image: url("/Images/maldives.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.grid-item-2 {
+    background-image: url("/Images/indonesia.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.grid-item-3 {
+    background-image: url("/Images/srilanka.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.grid-item-4 {
+    background-image: url("/Images/north\ america.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.grid-item-5 {
+    background-image: url("/Images/kashmir.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.grid-item-6 {
+    background-image: url("/Images/bangladesh.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.grid-item-7 {
+    background-image: url("/Images/bandarban.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 1.5%;
+}
+
+.container-1 {
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 49.5% 49.5%;
+}
+
+.container-2 {
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 32% 41% 25%;
+}
+
+.container-3 {
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 41% 58%;
+}
+
+
+
+
+
 
 
 
@@ -289,20 +387,38 @@ main {
     }
 
     /* Popular Tour Section Style Responsive */
-    .popular-tour-section{
+    .popular-tour-section {
         flex-direction: column;
     }
-    .section-title{
+
+    .section-title {
         font-size: 2rem;
         margin-top: 5%;
     }
-    .section-description{
+
+    .section-description {
         font-size: 1rem;
     }
-    .tour-mountain{
+
+    .tour-mountain {
         width: 100%;
         margin-top: 5%;
         margin-bottom: 5%;
+    }
+
+    /* Choose your Destination Style Responsive */
+    .container-1, .container-2, .container-3{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .destination-text{
+        margin: 3% 6%;
+    }
+    .grid-container{
+        gap: 10px;
+    }
+    .grid-item{
+        width: 100%;
     }
 
 }
