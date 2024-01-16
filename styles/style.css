@@ -311,6 +311,7 @@ main {
 /* Testimonial Section Style */
 .testimonial-section {
     text-align: center;
+    margin-bottom: 8%;
 }
 
 .testimonial-text {
@@ -349,12 +350,92 @@ main {
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
-.testimonial-card{
+
+.testimonial-card {
     display: flex;
     justify-content: center;
     gap: 2%;
     flex-wrap: wrap;
-    
+
+}
+
+/* Newsletter section style */
+.newsletter-section {
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+.newsletter-text {
+    border: 1px solid #FF5400;
+    border-radius: 8px;
+    padding: 3%;
+    width: 50%;
+}
+
+.newsletter-text input {
+    display: block;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    width: 90%;
+    padding: 3% 5%;
+    margin: 7% 0;
+    border: none;
+}
+
+.newsletter-text ::placeholder {
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.newsletter-text hr {
+    border: none;
+    border-top: 1px solid rgba(19, 19, 24, 0.10);
+    height: 1px;
+}
+
+.newsletter-btn {
+    margin-top: 3%;
+    width: 100%;
+}
+
+.newsletter-img {
+    position: relative;
+    width: 100%;
+}
+
+.news-poster {
+    width: 100%;
+}
+
+.save-text {
+    position: absolute;
+    top: 66%;
+    left: 58.5%;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+}
+
+.save-description {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 7%;
+}
+
+.save-title {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
 }
 
 
@@ -367,15 +448,22 @@ main {
 
 @media screen and (max-width: 600px) {
 
+    /* flex-direction: column */
+    .nav-list,
+    .banner-form,
+    .form-container,
+    .popular-tour-section,
+    .testimonial-card,
+    .newsletter-section {
+        flex-direction: column;
+    }
+
     header,
     main {
         margin: 0 20px;
     }
 
     /* Nav bar Responsive */
-    .nav-list {
-        flex-direction: column;
-    }
 
     .nav-toggle {
         display: block;
@@ -421,7 +509,6 @@ main {
     }
 
     .banner-form {
-        flex-direction: column;
         align-items: center;
     }
 
@@ -438,7 +525,6 @@ main {
         display: flex;
         width: 350px;
         padding: 16px;
-        flex-direction: column;
         align-items: center;
         gap: 16px;
         margin-bottom: 10%;
@@ -452,9 +538,6 @@ main {
     }
 
     /* Popular Tour Section Style Responsive */
-    .popular-tour-section {
-        flex-direction: column;
-    }
 
     .section-title {
         font-size: 2rem;
@@ -491,18 +574,52 @@ main {
         width: 100%;
     }
 
-/* why choose us section style responsive */
-.testimonial-card{
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10%;
-}
-.testimonial-text{
-    margin: 3%;
-}
-.card{
-    width: 95%;
-    padding: 5%;
-    margin-bottom: 5%;
-}
+    /* why choose us section style responsive */
+    .testimonial-card {
+        align-items: center;
+        margin-bottom: 10%;
+        width: 95%;
+    }
+
+    .testimonial-text {
+        margin: 3%;
+    }
+
+    .card {
+        width: 95%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    /* newsletter section style responsive */
+    .newsletter-section {
+        justify-content: space-between;
+    }
+
+    .newsletter-text {
+        width: 95%;
+        display: block;
+        padding-bottom: 5%;
+    }
+
+    .newsletter-btn {
+        width: 95%;
+        margin-top: 0;
+    }
+
+    .newsletter-text input {
+        width: 85%;
+    }
+
+    .news-poster {
+        margin-top: 5%;
+        width: 102%;
+    }
+
+    .save-text {
+        top: 49%;
+        left: 34%;
+    }
+
+
 }
