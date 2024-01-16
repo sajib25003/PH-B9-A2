@@ -64,12 +64,14 @@ main {
     font-size: 18px;
     font-weight: 400;
 }
+
 .nav-item-1>a {
     color: #FF5400;
     font-size: 18px;
     font-weight: 700;
     list-style: none;
 }
+
 .nav-toggle {
     display: none;
 }
@@ -78,12 +80,15 @@ main {
 .nav-item-1 a {
     text-decoration: none;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
 }
-.nav-item:hover{
-    background-color:darkgrey;
+
+.nav-item:hover {
+    background-color: darkgrey;
 }
+
 .logo {
     height: 56px;
 }
@@ -202,14 +207,16 @@ main {
 }
 
 /* Choose Destination Section Style */
-.destination-section{
+.destination-section {
     margin-top: 8%;
     margin-bottom: 10%;
     text-align: center;
 }
-.destination-text{
+
+.destination-text {
     margin: 3% 20%;
 }
+
 .grid-text {
     color: #FFF;
     font-family: Mulish;
@@ -229,11 +236,13 @@ main {
     justify-content: center;
     align-items: center;
 }
-.grid-item:hover{
+
+.grid-item:hover {
     cursor: pointer;
-opacity: 0.7;
-scale: 1.025;
+    opacity: 0.7;
+    scale: 1.025;
 }
+
 .grid-item-1 {
     background-image: url("/Images/maldives.png");
     background-repeat: no-repeat;
@@ -299,9 +308,54 @@ scale: 1.025;
     grid-template-columns: 41% 58%;
 }
 
+/* Testimonial Section Style */
+.testimonial-section {
+    text-align: center;
+}
+
+.testimonial-text {
+    margin: 0 25% 5% 25%;
+}
+
+.card {
+    width: 44%;
+    border-radius: 16px;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+.card-img {
+    width: 64px;
+}
+
+.card-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
 
 
+.card-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
 
+.card-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.card-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+.testimonial-card{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+    
+}
 
 
 
@@ -418,18 +472,37 @@ scale: 1.025;
     }
 
     /* Choose your Destination Style Responsive */
-    .container-1, .container-2, .container-3{
+    .container-1,
+    .container-2,
+    .container-3 {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-    .destination-text{
+
+    .destination-text {
         margin: 3% 6%;
     }
-    .grid-container{
+
+    .grid-container {
         gap: 10px;
     }
-    .grid-item{
+
+    .grid-item {
         width: 100%;
     }
 
+/* why choose us section style responsive */
+.testimonial-card{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.testimonial-text{
+    margin: 3%;
+}
+.card{
+    width: 95%;
+    padding: 5%;
+    margin-bottom: 5%;
+}
 }
