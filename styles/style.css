@@ -413,7 +413,7 @@ main {
 
 .inner-container img,
 .middle-container img {
-    height: 50%;
+    height: 100%;
 }
 
 .outer-container img {
