@@ -122,7 +122,7 @@ main {
 /* Banner section style */
 .banner-section {
     height: 550px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("/Images/banner.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("../Images/banner.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: top;
@@ -248,21 +248,21 @@ main {
 }
 
 .grid-item-1 {
-    background: url("/Images/maldives.png");
+    background: url("../Images/maldives.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     grid-area: a;
 }
 
 .grid-item-2 {
-    background: url("/Images/indonesia.png");
+    background: url("../Images/indonesia.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     grid-area: b;
 }
 
 .grid-item-3 {
-    background: url("/Images/srilanka.png");
+    background: url("../Images/srilanka.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     grid-area: c;
@@ -270,7 +270,7 @@ main {
 }
 
 .grid-item-4 {
-    background: url("/Images/north\ america.png");
+    background: url("../Images/north\ america.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     grid-area: d;
@@ -278,7 +278,7 @@ main {
 }
 
 .grid-item-5 {
-    background: url("/Images/kashmir.png");
+    background: url("../Images/kashmir.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     grid-area: e;
@@ -286,7 +286,7 @@ main {
 }
 
 .grid-item-6 {
-    background: url("/Images/bangladesh.png");
+    background: url("../Images/bangladesh.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     grid-area: f;
@@ -294,7 +294,7 @@ main {
 }
 
 .grid-item-7 {
-    background: url("/Images/bandarban.png");
+    background: url("../Images/bandarban.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     grid-area: g;
